@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #e6e6e6;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(30, 30, 46, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #39395a;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #4e4e7c;
+        }
+        
+        h1 {
+            color: #ffcc00;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            color: #a0a0c0;
+            font-size: 1.2rem;
+        }
+        
+        .characters {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .character {
+            background: linear-gradient(135deg, #2d2d4e, #3a3a5e);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            color: #ffcc00;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .rules-section {
+            margin-bottom: 30px;
+            background: rgba(40, 40, 60, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #ffcc00;
+        }
+        
+        .rules-section h2 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .rules-section h2::before {
+            content: "•";
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+        
+        .rules-list {
+            list-style-type: none;
+        }
+        
+        .rules-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .rules-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #ffcc00;
+        }
+        
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        
+        .warning {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .note {
+            background-color: rgba(255, 204, 0, 0.1);
+            border-left: 3px solid #ffcc00;
+            padding: 10px 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .info-box {
+            background-color: rgba(0, 150, 255, 0.1);
+            border-left: 3px solid #0096ff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .info-box h3 {
+            color: #0096ff;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #4e4e7c;
+            color: #a0a0c0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .character {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1>RULES BY CIRCLE VILENCY</h1>
+            <h1>RULES IN GAME</h1>
+            <p class="subtitle">Skill Wajib</p>
+            
+            <div class="characters">
+                <div class="character">ALOK</div>
+                <div class="character">HAYATO</div>
+                <div class="character">CAROLINE</div>
+                <div class="character">KELY</div>
+            </div>
+            
+            <p class="warning">[ GA ADA SALAH SATU KOSONGIN ]</p>
+        </header>
+        
+        <main>
+            <section class="rules-section">
+                <h2>Aturan Umum</h2>
+                <ul class="rules-list">
+                    <li><span class="highlight">SS 00 JONGKOK+BERDIRI KE BASE</span></li>
+                    <li>LAWAN WAJIB PEGANG SG</li>
+                    <li>NO PET LAIN SELAIN <span class="highlight">FALCO/KITY / PANTHER</span></li>
+                    <li>HS BRUTAL LEBIH DARI 6 DIS (pc weijar)</li>
+                    <li>BISA RM JIKA BELUM DEMEG SAMSEK</li>
+                    <li>KALO DAH DEMEG NO RM</li>
+                    <li>MENTAL/RM MAKSIMAL 5 KALI</li>
+                    <li>11/22 ZONA ON [ NO ZONA ]</li>
+                    <li>33/44 ZONA OF [ BOLEH ZONA ]</li>
+                    <li>SS 00 DI TEMBAK RESIKO SENDIRI</li>
+                    <li>NO BUNDEL BALAP + BENCONG</li>
+                    <li>NO BAWAH KOLONG CT</li>
+                    <li>NO LT 2 ATAU ATAP</li>
+                    <li>NO REGE/SCRIPT, DLL</li>
+                </ul>
+            </section>
+            
+            <section class="rules-section">
+                <h2>Aturan Karakter & Equipment</h2>
+                <ul class="rules-list">
+                    <li>BAL NO GANTI HUD</li>
+                    <li>NO CHAR CEWE</li>
+                    <li>NO SEPATU</li>
+                    <li>SURCIN DIS</li>
+                    <li>MAKAI SG GURUN PASIR AMAN ASAL KALIAN GA MAIN NYMT</li>
+                    <li>DEMEG KALAU NYMT AJA AMAN</li>
+                </ul>
+            </section>
+            
+            <section class="rules-section">
+                <h2>Room & Game Settings</h2>
+                <ul class="rules-list">
+                    <li>LODOUT OF, JIKA LUPA DI OF KAN AMAN AJA ASAL GA ADA YANG MAKE</li>
+                    <li>AIRDROB OF, JIKA LUPA DI OF KAN AMAN AJA ASAL GA ADA YANG MAKE DLM GAME</li>
+                    <li>AMMO TIDAK TERBATAS</li>
+                    <li>ZONA LOT TIER BEBAS</li>
+                    <li>DEMEG SAAT JATUH ON</li>
+                    <li>CYBER AIRDROB OF</li>
+                    <li>ROM CRAZY STORE</li>
+                    <li>HEADSOT OF</li>
+                    <li>PINALTY OF</li>
+                    <li>COIN 1500</li>
+                    <li>ROOM CRAZY STORE</li>
+                </ul>
+            </section>
+            
+            <section class="rules-section">
+                <h2>Rules New</h2>
+                <ul class="rules-list">
+                    <li>END ANIMASI DIS NO CACICU</li>
+                    <li>(BATALIN END ANIMASI TERUS DAPAT SHILED AMAN AJA, SOALYA SHILED BERFUNGSI PAS UDAH NGE END ANIMASI)</li>
+                </ul>
+            </section>
+            
+            <section class="rules-section">
+                <h2>Rules NOEVMET</h2>
+                <ul class="rules-list">
+                    <li>MAIN NOEVMET YANG GA ADA EVMET SS AJA</li>
+                    <li>YANG ADA EVO/METEOR WAJIB REC SAMPAI DI GAS ATAU REC HABIS WIN</li>
+                </ul>
+            </section>
+            
+            <section class="rules-section">
+                <h2>Rules NOEVMET DEMEG</h2>
+                <ul class="rules-list">
+                    <li>MAIN NOEVMET DEMEG YANG ADA SG</li>
+                    <li>DEMEG SEPERTI [ MAMBA OPM LUMUT DII ] WAJIB REC SAMPAI DI GAS</li>
+                </ul>
+            </section>
+            
+            <section class="rules-section">
+                <h2>Rules MAIN 1 KAYU</h2>
+                <ul class="rules-list">
+                    <li>YANG MAKE KAYU GA ADA SKIN SS SG AJA</li>
+                    <li>YANG MAKE KAYU ADA SKIN WAJIB REC SAMPAI DI GAS/ REC PAS WIN</li>
+                </ul>
+            </section>
+            
+            <section class="rules-section">
+                <h2>Rules ALKAYU</h2>
+                <ul class="rules-list">
+                    <li>MAIN ALKAYU ATRIBUT OF + SG SKIN LEPAS</li>
+                </ul>
+            </section>
+            
+            <section class="rules-section">
+                <h2>Rules BAL</h2>
+                <ul class="rules-list">
+                    <li>ALL PLAYER YANG LOSE SEND OO, GA BOLEH BEDA HUD</li>
+                    <li>NO GANTI AKUN, NO GANTI PLAYER</li>
+                    <li>KALO MO GANTI AKUN BILANG DARI AWAL</li>
+                </ul>
+            </section>
+            
+            <div class="info-box">
+                <h3>INFO TERBARU</h3>
+                <p>PET SEKARANG UDAH GA BISA DI GANTI JADI BUAT BUYER YANG GA PUNYA FALCO/KITY BISA DI GANTI KE PANTHER/SHIBA SOALNYA SKIL NYA GA NGARUH DI MODE CS, PANTHER SKIL NYA CMN NAMBAH RUANG INVENTORY SEDANGKAN SHIBA TANDAIN JAMUR</p>
+            </div>
+            
+            <div class="note">
+                <p><strong>CONTOH SS 00 HADAB BASE LAWAN YANG BENAR</strong></p>
+                <p>MIRING GAPAPA ASAL GA NUNDUK SAMA BASE LAWAN MASHI NAMPAK</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Rules Game &copy; 2023 - Semua aturan harus dipatuhi selama bermain</p>
+        </footer>
+    </div>
+</body>
+</html>
